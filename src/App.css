@@ -96,7 +96,7 @@ button.submitbtn.btn.btn-primary {
 }
 
 .photoDiv {
-  background-image: url(hero-desktop.jpg);
+  background-image: url(/hero-desktop.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -141,7 +141,7 @@ button.submitbtn.btn.btn-primary {
   }
 
   .photoDiv {
-    background-image: url(hero-mobile.jpg);
+    background-image: url(/hero-mobile.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
