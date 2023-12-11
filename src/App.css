@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&family=Rubik:wght@400;500&display=swap');
+
+#root {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.pink {
+  color: #ce9797;
+}
+
+.topbar {
+  background-color: transparent;
+  position: absolute;
+  padding: 40px;
+}
+
+.col-md-7 {
+  padding: 0;
+  background-image: url(bg-pattern-desktop.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.col-md-5 {
+  padding: 0;
+}
+
+.boxDiv {
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.text {
+  max-width: 450px;
+  margin-top: 15px;
+}
+
+.emailDiv {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 30px;
+
+}
+
+.emailDiv input {
+  border: 1px solid #ce9797;
+  border-radius: 30px;
+  margin-top: 15px;
+  width: 100%;
+  padding: 10px 15px;
+}
+
+.emailDiv input:focus-visible {
+  outline: 2px solid #f96262;
+}
+
+.error {
+  position: absolute;
+  right: 20%;
+  top: 40%;
+}
+
+.errorText {
+  padding: 0px 15px;
+}
+
+.submitbtn {
+  background-color: #ce9797;
+  color: white;
+  border-radius: 20px;
+  border: 1px solid #ce9797;
+  position: absolute;
+  top: 25%;
+  padding: 10px 30px;
+  right: -2px;
+}
+
+.submitbtn:hover {
+  background-color: #ce9797;
+  border: 1px solid #ce9797;
+}
+
+button.submitbtn.btn.btn-primary {
+  background-color: #ce9797;
+  border-color: #ce9797;
+}
+
+.photoDiv {
+  background-image: url(hero-desktop.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1060px;
+}
+
+@media screen and (max-width: 768px) {
+  .row {
+    display: flex;
+    padding: 0;
+  }
+
+  .col-md-7 {
+    order: 2;
+    padding: 0;
+  }
+
+  .col-md-5 {
+    order: 1;
+    padding: 0;
+  }
+
+  .topbar {
+    background-color: transparent;
+    position: relative;
+    padding: 20px;
+  }
+
+  .title {
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .text {
+    text-align: center;
+    padding: 10px 30px;
+  }
+
+  .emailDiv {
+    padding-left: 30px;
+    padding-right: 40px;
+  }
+
+  .photoDiv {
+    background-image: url(hero-mobile.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+  }
+
+  .error {
+    right: 30%;
+  }
+
+  .errorText {
+    padding: 0;
+    text-align: center;
+  }
+
+  .submitbtn {
+    top: 25%;
+    right: 35px;
+    padding: 10px 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .photoDiv {
+    background-position: top;
+    background-size: contain;
+    height: 280px;
+
+  }
+
+  .title {
+    margin-top: 0px;
+  }
+}
